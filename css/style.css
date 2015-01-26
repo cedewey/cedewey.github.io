@@ -32,7 +32,6 @@ body {
 	line-height: 1;
 	font-family: 'Vollkorn', Georgia, Times, serif; 
 	font-size: 16px; 
-	color: #838994; 
 	letter-spacing: 0.03em;
 }
 ol, ul {
@@ -56,16 +55,24 @@ table {
 	border-spacing: 0;
 }
 a {
-	color: #838994;
 	text-decoration: none;
 	font: inherit;
+	font-size: 20px;
+}
+.intro p {
+	font-size: 40px;
+	text-align: center;
+	padding-top: 250px;
+	line-height: 40px;
+	color: rgb(231, 220, 220);
+
 }
 a:hover {
 	cursor: pointer;
-	color: #333333;
+	color: #B1B7C3;
 }
 a:active {
-    color: #4c5058;
+    color: #B1B7C3;
     font-weight: 500;	
 }
 .big-button {
@@ -100,10 +107,36 @@ h1 {
     line-height: 65px;
 }
  
+header {
+	color: white;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: black;
+	width: 100%;
+}
+@media only screen and (max-width: 830px) {
+	.intro p {
+		font-size: 30px;
+	}
+	.profile {
+		max-width: 100%;
+	}
+	.portfolio-piece img {
+		max-width: 100%;
+	}
+}
+header a {
+	color: white;
+}
+header p {
+	color: white;
+}
 p {
     font-family: 'Vollkorn', Georgia, Times, serif;
     font-size: 16px;
     line-height: 25px;
+    color: black;
 }
 .title {
 	width: 45%;
@@ -128,26 +161,57 @@ p {
 	padding-right: 5px;
 }
 .intro {
-	width: 50%;
+	background: url(../images/denver-night.jpg) no-repeat;
+	background-size: cover;
+	height: 600px;
 	margin: 0 auto;
 	clear: left;
 	text-align: center;
-	margin-bottom: 4rem;
 }
 .sections {
 	width: 50%;
 	margin: auto;
 	text-align: center;
 }
-header {
-	position: relative;
-
-	background-color: black;
-}
 .pages li {
-	width: 30%;
+	margin: 20px;
+	width: 20%;
 }
+
 .content{
-	max-width: 960px;
+	max-width: 1040px;
 	height: 120px;
+	margin: 0 auto;
+}
+section .content {
+	padding-top: 3rem;
+}
+.pages-item {
+	width: 15%;
+}
+.profile {
+	display: inline-block;
+	float: left;
+	max-width: 25%;
+}
+.about-content {
+	float: left;
+	display: inline-block;
+	max-width: 75%;
+}
+.portfolio {
+	background-color: gray;
+	clear: both;
+	height: 850px;
+}
+.portfolio-piece img {
+	max-width: 45%;
+	float: left;
+	padding: 20px;
+}
+.portfolio-piece img:hover {
+	  linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
 }
