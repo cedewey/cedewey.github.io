@@ -148,7 +148,7 @@ p {
 
 .contact {
 	margin-left: 55%;
-	padding:  10px 5px 0 0;
+	padding:  10px 15px 0 0;
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -158,7 +158,10 @@ p {
 	position: absolute;
 	bottom: 0;
 	right: 0;
-	padding-right: 5px;
+	padding-right: 15px;
+}
+.top-navigation li {
+	padding-right: 20px;
 }
 .intro {
 	background: url(../images/denver-night.jpg) no-repeat;
@@ -214,4 +217,7 @@ section .content {
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
     ),
+}
+a h1:hover {
+	color: black;
 }
