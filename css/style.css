@@ -31,7 +31,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 	font-family: 'Vollkorn', Georgia, Times, serif; 
-	font-size: 16px; 
+	font-size: 1.1em; 
 	letter-spacing: 0.03em;
 }
 ol, ul {
@@ -57,13 +57,13 @@ table {
 a {
 	text-decoration: none;
 	font: inherit;
-	font-size: 20px;
+	font-size: 1.5em;
 }
 .intro p {
-	font-size: 40px;
+	font-size: 2.5em;
 	text-align: center;
 	padding-top: 250px;
-	line-height: 40px;
+	line-height: 1.5em;
 	color: rgb(231, 220, 220);
 
 }
@@ -103,7 +103,7 @@ cursor: pointer;
 
 h1 {
     font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
-    font-size: 50px;
+    font-size: 2em;
     line-height: 65px;
 }
  
@@ -115,17 +115,6 @@ header {
 	background-color: black;
 	width: 100%;
 }
-@media only screen and (max-width: 830px) {
-	.intro p {
-		font-size: 30px;
-	}
-	.profile {
-		max-width: 100%;
-	}
-	.portfolio-piece img {
-		max-width: 100%;
-	}
-}
 header a {
 	color: white;
 }
@@ -134,9 +123,10 @@ header p {
 }
 p {
     font-family: 'Vollkorn', Georgia, Times, serif;
-    font-size: 16px;
+    font-size: 1.1em;
     line-height: 25px;
     color: black;
+    page-break-after: always;
 }
 .title {
 	width: 45%;
@@ -195,22 +185,26 @@ section .content {
 .profile {
 	display: inline-block;
 	float: left;
-	max-width: 25%;
+	max-width: 38%;
+	padding-right: 1em;
 }
 .about-content {
 	float: left;
 	display: inline-block;
-	max-width: 75%;
+	max-width: 60%;
 }
 .portfolio {
 	background-color: gray;
 	clear: both;
-	height: 850px;
+  	-webkit-box-sizing: border-box;
+ 	-moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 .portfolio-piece img {
 	max-width: 45%;
 	float: left;
 	padding: 20px;
+	margin-left: 1.5em;
 }
 .portfolio-piece img:hover {
 	  linear-gradient(
@@ -221,3 +215,20 @@ section .content {
 a h1:hover {
 	color: black;
 }
+@media only screen and (max-width: 830px) {
+	.about-content{
+		max-width: 100%;
+		padding: 3em;
+	}
+	.intro p {
+		font-size: 2.5em;
+	}
+	.profile {
+		max-width: 100%;
+	}
+	.portfolio-piece img {
+		max-width: 100%;
+		margin-left: 0;
+	}
+}
+
