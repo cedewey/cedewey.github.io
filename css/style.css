@@ -214,6 +214,15 @@ section .content {
 a h1:hover {
 	color: black;
 }
+.social ul {
+	text-align: center;
+}
+.social li {
+	padding: 4em;
+}
+.social a {
+	color: black;
+}
 @media only screen and (max-width: 830px) {
 	.about-content{
 		max-width: 100%;
@@ -261,7 +270,4 @@ a h1:hover {
 		width: 100%;
 		text-align: center;
 	}
-}
-.social a {
-	color: black;
 }
