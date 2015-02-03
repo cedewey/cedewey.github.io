@@ -277,5 +277,8 @@ a h1:hover {
 		font-size: 2em;
 		padding-top: 6em;
 	}
-	.portfolio 
+	.social li {
+		display: block;
+		padding: 2em;
+	}
 }
