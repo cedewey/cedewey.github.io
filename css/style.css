@@ -173,7 +173,6 @@ p {
 
 .content{
 	max-width: 1040px;
-	height: 120px;
 	margin: 0 auto;
 }
 section .content {
@@ -226,9 +225,11 @@ a h1:hover {
 	.profile {
 		max-width: 100%;
 	}
+	.portfolio-piece {
+		margin: 0 auto;
+	}
 	.portfolio-piece img {
 		max-width: 100%;
-		margin-left: 0;
 	}
 	.title {
 		width: 100%;
