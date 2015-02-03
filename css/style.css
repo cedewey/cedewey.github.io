@@ -199,11 +199,14 @@ section .content {
  	-moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-.portfolio-piece img {
+.portfolio-piece {
+	display: inline-block;
 	max-width: 45%;
-	float: left;
 	padding: 20px;
 	margin-left: 1.5em;
+}
+.portfolio-piece img {
+	width: 100%;
 }
 .portfolio-piece img:hover {
 	  linear-gradient(
@@ -236,8 +239,6 @@ a h1:hover {
 	}
 	.portfolio-piece {
 		margin: 0 auto;
-	}
-	.portfolio-piece img {
 		max-width: 100%;
 	}
 	.title {
@@ -265,9 +266,16 @@ a h1:hover {
 	}
 	.top-navigation {
 		width: 100%;
+		padding: 0;
 	}
 	.top-navigation li {
 		width: 100%;
 		text-align: center;
+		padding: 0;
 	}
+	.intro p {
+		font-size: 2em;
+		padding-top: 6em;
+	}
+	.portfolio 
 }
